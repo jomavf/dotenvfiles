@@ -68,12 +68,18 @@ let g:ctrlp_use_caching=0
 let g:netrw_winsize=25
 
 
+"FZF BEGIN
+let g:fzf_layout = {"window": {'width': 0.8, 'height': 0.8} }
+let $FZF_DEFAULT_OPTS = '--reverse'
+"FZF END
+
 " MAP KEYS
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <C-p> :GFiles<CR>
 
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
@@ -81,10 +87,6 @@ nnoremap <leader>u :UndotreeShow<CR>
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
 
-"FZF BEGIN
-let g:fzf_layout = {"window": {'width': 0.8, 'height': 0.8} }
-let $FZF_DEFAULT_OPTS = '--reverse'
-"FZF END
 
 " COC BEGIN
 
