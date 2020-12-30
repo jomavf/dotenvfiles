@@ -1,5 +1,6 @@
 syntax on
 
+
 set guicursor=
 set relativenumber
 set nohlsearch
@@ -46,9 +47,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'mbbill/undotree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() }} 
 Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
 Plug 'vim-utils/vim-man'
 Plug 'neoclide/coc.nvim', { 'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -80,13 +84,24 @@ nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <C-p> :GFiles<CR>
-
-
+nnoremap <leader>ps :Rg<SPACE>
+nnoremap <leader>pf :Files<SPACE>
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+nmap <leader>rr <Plug>(coc-rename)
+nnoremap <leader>prw :CocSearch <C-R>expand("<cword>")<CR><CR>
+nnoremap <leader>gc :GBranches<CR>
+nnoremap <leader>ga :Git fetch --all<CR>
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
 " prefer to have a way for switching relative numbers with a single map.
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
 
+" Sweet sweet fugitive
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
+nmap <leader>gs :G<CR>
 
 " COC BEGIN
 
