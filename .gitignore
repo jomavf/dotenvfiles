@@ -1,7 +1,9 @@
+*
 undodir/ 
-
 plugged/
-
 autoload/
-
 .netrwhist
+
+!.vim
+!.tmux.conf
+!jmvf
