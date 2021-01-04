@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/joseveliz/dev/b1-frontend-develop/src/postFeed/components'
+let g:netrw_dirhist_1='/Users/joseveliz/dev/b1-frontend-develop/src/global/storage'
+let g:netrw_dirhist_0='/Users/joseveliz/dev/b1-frontend-develop/src/global'
+let g:netrw_dirhist_9='/Users/joseveliz/dev/b1-frontend-develop/src'
+let g:netrw_dirhist_8='/Users/joseveliz/dev/b1-frontend-develop'
+let g:netrw_dirhist_7='/Users/joseveliz/dev/b1-frontend-develop/src'
+let g:netrw_dirhist_6='/Users/joseveliz/dev/b1-frontend-develop/src/authentication'
+let g:netrw_dirhist_5='/Users/joseveliz/dev/b1-frontend-develop/src/authentication/api'
+let g:netrw_dirhist_4='/Users/joseveliz/dev/b1-frontend-develop'
+let g:netrw_dirhist_3='/Users/joseveliz/dev/practice/project-with-dep-of-b1ops/src'
